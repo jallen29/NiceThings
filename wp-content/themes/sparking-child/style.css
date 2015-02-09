@@ -1,0 +1,157 @@
+/*
+ Theme Name:   Sparkling Child
+ Description:  Nice Things Handmade Custom Site
+ Author:       Jennifer Allen
+ Author URI:   http://jallen29.com.com
+ Template:     sparkling
+ Version:      1.0.0
+ Text Domain:  sparkling-child
+*/
+
+
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+body{
+background-color: #ffbfe5;
+background-image: -webkit-gradient(radial, 50% 50%,0,50% 50%,200, from(rgb(255, 255, 255)), to(rgb(255, 191, 229)));
+background-image: -webkit-radial-gradient(50% 50%, rgb(255, 191, 229), rgb(255, 255, 255));
+background-image: -moz-radial-gradient(50% 50%, rgb(255, 191, 229), rgb(255, 255, 255));
+background-image: -o-radial-gradient(50% 50%, rgb(255, 191, 229), rgb(255, 255, 255));
+background-image: -ms-radial-gradient(50% 50%, rgb(255, 191, 229), rgb(255, 255, 255));
+background-image: radial-gradient(50% 50%, rgb(255, 191, 229), rgb(255, 255, 255));
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffbfe5', endColorstr='#fff');
+}
+
+.page-id-34 .main-content-inner, .page-id-37 .main-content-inner {
+width: 100%;
+}
+
+.btn-default{
+background-color: #e54496;
+border-color: #e54496;
+}
+
+.btn-default:hover {
+background-color: #313233;
+color: #fff;
+}
+
+.navbar-default .navbar-nav li{
+font-family: 'Oswald', sans-serif;
+font-weight: 700;
+margin-right: 5px;
+border-top: 2px dashed #000;
+border-right: 2px dashed #000;
+border-left:  2px dashed #000;
+border-radius: 10px 10px 0 0;
+}
+
+.nav.navbar-nav{
+padding-top: 104px;
+}
+
+nav.navbar-default .navbar-nav > .active > a{
+color: #e54496;
+background-color: #ffbfe5;
+background-image: -webkit-gradient(radial, 50% 50%,0,50% 50%,200, from(rgb(255, 255, 255)), to(rgb(255, 191, 229)));
+background-image: -webkit-radial-gradient(50% 50%, rgb(255, 191, 229), rgb(255, 255, 255));
+background-image: -moz-radial-gradient(50% 50%, rgb(255, 191, 229), rgb(255, 255, 255));
+background-image: -o-radial-gradient(50% 50%, rgb(255, 191, 229), rgb(255, 255, 255));
+background-image: -ms-radial-gradient(50% 50%, rgb(255, 191, 229), rgb(255, 255, 255));
+background-image: radial-gradient(50% 50%, rgb(255, 191, 229), rgb(255, 255, 255));
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffbfe5', endColorstr='#fff');
+border-radius: 10px 10px 0 0;
+padding-bottom: 20px;
+}
+
+#secondary{
+border: none;
+margin-top: 10px;
+padding: 5px;
+background-image: url("/wp-content/uploads/2014/09/content-background.jpg");
+font-weight: bold;
+line-height: 1.3em;
+border: 3px dashed #000;
+border-radius: 10px;
+font-weight: normal;
+}
+
+#secondary .widget a {
+color: #e54496;
+}
+
+.entry-content{
+line-height: 1.5em;
+}
+
+.well {
+border: none;
+background-color: none;
+background-image: url("/wp-content/uploads/2014/09/content-background.jpg");
+}
+
+.page-header, .entry-title {
+margin: 0;
+padding: 0;
+}
+
+.post-inner-content, .post-inner-content:first-child{
+border: none;
+padding: 20px;
+margin: 10px;
+background-image: url("/wp-content/uploads/2014/09/content-background.jpg");
+font-weight: bold;
+line-height: 1.3em;
+border: 3px dashed #000;
+border-radius: 10px;
+font-weight: normal;
+}
+
+.navbar > .container .navbar-brand {
+font-size: 22px;
+padding-top: 108px;
+padding-right: 117px;
+font-family: 'Handlee', cursive;
+}
+
+/* Portrait tablets and small desktops */
+@media (max-width: 1199px) {
+
+.nav.navbar-nav{
+padding-top: 0;
+
+}
+
+}
+
+@media (max-width: 767px) {
+
+.home .post-inner-content, .home .post-inner-content:first-child{
+margin-top: 325px;
+}
+
+.navbar > .container .navbar-brand {
+font-size: 20px;
+padding-bottom: 50px;
+margin-top: -50px;
+}
+
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+
+.navbar > .container .navbar-brand {
+font-size: 18px;
+padding-bottom: 50px;
+margin-top: -50px;
+}
+
+.home .post-inner-content, .home .post-inner-content:first-child{
+margin-top: 200px;
+
+}
+
+}

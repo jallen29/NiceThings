@@ -1,0 +1,29 @@
+# BEGIN iThemes Security
+#Quick ban IP. Will be updated on next formal rules save.
+SetEnvIF REMOTE_ADDR "^85\.113\.38\.80$" DenyAccess
+SetEnvIF X-FORWARDED-FOR "^85\.113\.38\.80$" DenyAccess
+SetEnvIF X-CLUSTER-CLIENT-IP "^85\.113\.38\.80$" DenyAccess
+order allow,deny
+deny from env=DenyAccess
+deny from 85.113.38.80
+allow from all
+# BEGIN iThemes Security
+
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^nicethingshandmade.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www.nicethingshandmade.com$
+RewriteRule ^/?$ "http\:\/\/www\.facebook\.com\/nicethingshandmade" [R=301,L]
+
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
